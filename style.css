@@ -1,3 +1,32 @@
+/* Proxima Nova */
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("./assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("./assets/fonts/ProximaNova-Regular.woff") format("woff"), url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Futura Medium C */
+@font-face {
+  font-family: "FuturaMediumC";
+  src: local("FuturaMediumC"), url("./assets/fonts/futuramediumc.otf") format("opentype");
+}
+
+/* Futura Book C */
+@font-face {
+  font-family: "FuturaBookC";
+  src: local("FuturaBookC"), url("./assets/fonts/futurabookc.otf") format("opentype");
+}
+
+/* Futura Demi C */
+@font-face {
+  font-family: "FuturaDemiC";
+  src: local("FuturaDemiC"), url("./assets/fonts/futurademic.otf") format("opentype");
+}
+
+/******************************************** BEGIN ***********************************************/
 body {
   width: 1440px;
 }
