@@ -1,4 +1,3 @@
-/* Proxima Nova */
 @import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");
 @font-face {
   font-family: "Proxima Nova";
@@ -8,32 +7,279 @@
   font-style: normal;
 }
 
-/* Futura Medium C */
 @font-face {
   font-family: "FuturaMediumC";
   src: local("FuturaMediumC"), url("./assets/fonts/futuramediumc.otf") format("opentype");
 }
 
-/* Futura Book C */
 @font-face {
   font-family: "FuturaBookC";
   src: local("FuturaBookC"), url("./assets/fonts/futurabookc.otf") format("opentype");
 }
 
-/* Futura Demi C */
 @font-face {
   font-family: "FuturaDemiC";
   src: local("FuturaDemiC"), url("./assets/fonts/futurademic.otf") format("opentype");
 }
 
-/******************************************** BEGIN ***********************************************/
-body {
-  width: 1440px;
+.wrapper {
+  max-width: 1440px;
+  min-width: 375px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15px 37px 31px;
+  -ms-grid-columns: 83px auto 99px;
+      grid-template: 15px 37px 31px / 83px auto 99px;
+  background: #131313;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    -ms-grid-rows: 15px 37px 31px;
+    -ms-grid-columns: 50px auto 50px;
+        grid-template: 15px 37px 31px / 50px auto 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header {
+    -ms-grid-rows: 15px 37px 31px;
+    -ms-grid-columns: 25px auto 25px;
+        grid-template: 15px 37px 31px / 25px auto 25px;
+  }
 }
 
 @media (max-width: 375px) {
-  body {
-    width: 375px;
+  .header {
+    -ms-grid-rows: 15px 37px 31px;
+    -ms-grid-columns: 18px auto 18px;
+        grid-template: 15px 37px 31px / 18px auto 18px;
+  }
+}
+
+.navigation_bar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto 126px 161px;
+      grid-template-columns: 180px auto 126px 161px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navigation_bar {
+    -ms-grid-columns: 180px auto 126px;
+        grid-template-columns: 180px auto 126px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar {
+    -ms-grid-columns: 180px auto 126px;
+        grid-template-columns: 180px auto 126px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar {
+    -ms-grid-columns: 180px auto 126px;
+        grid-template-columns: 180px auto 126px;
+  }
+}
+
+.navigation_bar--navigation {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation_bar--logo {
+  cursor: default;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--logo {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--logo {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.navigation_bar--navigation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--navigation_list {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--navigation_list {
+    display: none;
+  }
+}
+
+.navigation_bar--navigation_list > li {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation_bar--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--item {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.navigation_bar--item-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--item-active {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--item-active {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.navigation_bar--item-active:hover {
+  background: blue;
+}
+
+.navigation_bar--item:hover {
+  background: blue;
+}
+
+.navigation_bar--contact_phone {
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #e3b873;
+}
+
+.navigation_bar--request_a_call_button {
+  height: 100%;
+  cursor: pointer;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e3b873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navigation_bar--request_a_call_button {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--request_a_call_button {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--request_a_call_button {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    max-width: 375px;
   }
 }
 /*# sourceMappingURL=style.css.map */

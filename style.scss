@@ -1,10 +1,42 @@
-/* Proxima Nova */
+// Mixins for media query
+
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$TV-width: 1440px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin TV {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$TV-width - 1px}) {
+    @content;
+  }
+}
+
+// Proxima Nova
 
 @font-face {
   font-family: "Proxima Nova";
   src: url("./assets/fonts/ProximaNova-Regular.eot");
   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
-    url("./assets/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("./assets/fonts/ProximaNova-Regular.woff2") format("woff2"),
     url("./assets/fonts/ProximaNova-Regular.woff") format("woff"),
     url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
@@ -12,39 +44,236 @@
   font-style: normal;
 }
 
-/* Futura Medium C */
+// Futura Medium C
 
 @font-face {
   font-family: "FuturaMediumC";
-  src: local("FuturaMediumC"), url("./assets/fonts/futuramediumc.otf") format("opentype");
+  src: local("FuturaMediumC"),
+    url("./assets/fonts/futuramediumc.otf") format("opentype");
 }
 
-/* Futura Book C */
+// Futura Book C
 
 @font-face {
   font-family: "FuturaBookC";
-  src: local("FuturaBookC"), url("./assets/fonts/futurabookc.otf") format("opentype");
+  src: local("FuturaBookC"),
+    url("./assets/fonts/futurabookc.otf") format("opentype");
 }
 
-/* Futura Demi C */
+// Futura Demi C
 
 @font-face {
   font-family: "FuturaDemiC";
-  src: local("FuturaDemiC"), url("./assets/fonts/futurademic.otf") format("opentype");
+  src: local("FuturaDemiC"),
+    url("./assets/fonts/futurademic.otf") format("opentype");
 }
 
 // Yeseva One
 
 @import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic");
 
-/******************************************** BEGIN ***********************************************/
+// **************************************** BEGIN ***********************************************
+
+.wrapper {
+  max-width: 1440px;
+  min-width: 375px;
+}
+
+// *************************************** HEADER ***********************************************
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
 
 body {
-  width: 1440px;
+  // background-color: #252525;
+}
+
+.header {
+  display: grid;
+  grid-template: 15px 37px 31px / 83px auto 99px;
+  background: #131313;
+
+  @include desktop() {
+    grid-template: 15px 37px 31px / 50px auto 50px;
+  }
+
+  @include tablet() {
+    grid-template: 15px 37px 31px / 25px auto 25px;
+  }
+
+  @include mobile() {
+    grid-template: 15px 37px 31px / 18px auto 18px;
+  }
+}
+
+.navigation_bar {
+  grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: 180px auto 126px 161px;
+  align-items: center;
+
+  @include desktop() {
+    grid-template-columns: 180px auto 126px;
+  }
+
+  @include tablet() {
+    grid-template-columns: 180px auto 126px;
+  }
+
+  @include mobile() {
+    grid-template-columns: 180px auto 126px;
+  }
+
+  &--navigation {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--logo {
+    cursor: default;
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #e3b873;
+
+    @include tablet() {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    @include mobile() {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &--navigation_list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+
+    @include tablet() {
+      display: none;
+    }
+
+    @include mobile() {
+      display: none;
+    }
+
+    & > li {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &--item {
+    display: flex;
+    height: 100%;
+    padding: 0 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @include tablet() {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    @include mobile() {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &-active {
+      display: flex;
+      height: 100%;
+      padding: 0 5px;
+      justify-content: center;
+      align-items: center;
+      font-family: FuturaBookC;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @include tablet() {
+        font-size: 13px;
+        line-height: 15px;
+      }
+
+      @include mobile() {
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      &:hover {
+        background: blue;
+      }
+    }
+
+    &:hover {
+      background: blue;
+    }
+
+    @include desktop() {
+    }
+
+    @include tablet() {
+    }
+
+    @include mobile() {
+    }
+  }
+
+  &--contact_phone {
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #e3b873;
+  }
+
+  &--request_a_call_button {
+    height: 100%;
+    cursor: pointer;
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #e3b873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+
+    @include desktop() {
+      display: none;
+    }
+
+    @include tablet() {
+      display: none;
+    }
+
+    @include mobile() {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 375px) {
-  body {
-    width: 375px;
+  .wrapper {
+    max-width: 375px;
   }
 }
