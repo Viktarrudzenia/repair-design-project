@@ -22,16 +22,16 @@
   src: local("FuturaDemiC"), url("./assets/fonts/futurademic.otf") format("opentype");
 }
 
-.wrapper {
-  max-width: 1440px;
-  min-width: 375px;
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  min-width: 375px;
 }
 
 .header {
