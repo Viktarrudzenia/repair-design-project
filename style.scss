@@ -228,6 +228,14 @@ $TV-width: 1440px;
     line-height: 16px;
     text-decoration-line: underline;
     color: #e3b873;
+
+    @include tablet() {
+      text-align: end;
+    }
+
+    @include mobile() {
+      text-align: end;
+    }
   }
 
   &--request_a_call_button {
@@ -242,6 +250,10 @@ $TV-width: 1440px;
     background: #e3b873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
+
+    &:hover {
+      background-color: blue;
+    }
 
     @include desktop() {
       display: none;
@@ -291,7 +303,7 @@ $TV-width: 1440px;
 }
 
 .turnkey_repair_container {
-  height: 707px;
+  height: 706px;
   display: flex;
   background-image: url(./assets/images/home_page_desktop_background.png);
 
@@ -489,17 +501,31 @@ $TV-width: 1440px;
 .scroll_down {
   width: 247px;
   height: 97px;
-  position: absolute;
+  position: relative;
+  bottom: 48px;
   display: flex;
-  display: none; // delete it for visible scroll down
+  // display: none; // delete it for visible scroll down
   justify-content: center;
   align-items: center;
   background: #131313;
+  z-index: 3;
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include mobile() {
+    display: none;
+  }
 
   &--link {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      background-color: blue;
+    }
   }
 
   &--text {
@@ -517,5 +543,318 @@ $TV-width: 1440px;
   }
 }
 // *************************************** SCROLL DOWN END *********************************************
+
+// *************************************** COMPLETED PROJECTS START *********************************************
+
+.completed_projects_wrapper {
+  height: 750px;
+  position: relative;
+  background: #131313;
+  overflow: hidden;
+  display: grid;
+  grid-template: 1fr / 592px auto;
+  align-items: center;
+  // background-image: url(./assets/images/completed_projects_background.svg);
+
+  @include tablet() {
+    height: 727px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding: 0 20px;
+  }
+
+  @include mobile() {
+    height: 727px;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding: 0 20px;
+  }
+}
+
+.completed_projects {
+  height: 390px;
+  padding: 0 50px 0 101px;
+  display: grid;
+  flex-direction: column;
+
+  @include tablet() {
+    height: auto;
+    padding: 0;
+  }
+
+  @include mobile() {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.completed_projects_heading {
+  padding-bottom: 42px;
+
+  &--title {
+    height: 66px;
+    width: 155px;
+    margin-bottom: 34px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #e3b873;
+
+    @include tablet() {
+      font-size: 24px;
+      line-height: 120%;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    @include mobile() {
+      height: 100%;
+      width: 100%;
+      font-size: 22px;
+      line-height: 138.6%;
+      text-align: center;
+    }
+  }
+
+  &--description {
+    height: 86px;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #ffffff;
+
+    @include tablet() {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    @include mobile() {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      line-height: 158.48%;
+    }
+  }
+}
+
+.completed_projects_swiper {
+  &--image_container {
+    display: none;
+
+    @include tablet() {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include mobile() {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &--arrows {
+    height: 242px;
+    width: 314px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--arrow_container {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e3b873;
+
+    &:hover {
+      background: blue;
+    }
+  }
+
+  @include tablet() {
+    display: block;
+    background: red;
+  }
+
+  @include mobile() {
+    display: block;
+    height: 340px;
+    background: red;
+  }
+}
+
+.completed_projects_info {
+  &--all_info {
+    @include tablet() {
+      padding-top: 37px;
+    }
+
+    @include mobile() {
+      padding-top: 37px;
+    }
+
+    height: 162px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  &--title {
+    padding-bottom: 10px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #e3b873;
+
+    @include tablet() {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    @include mobile() {
+      font-size: 14px;
+      line-height: 138.6%;
+    }
+  }
+
+  &--description {
+    padding: 0 65px 20px 0;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+
+    @include tablet() {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    @include mobile() {
+      font-size: 14px;
+      line-height: 135.84%;
+    }
+  }
+
+  &--slider_container {
+    display: none;
+  }
+}
+
+.completed_projects_slider {
+  position: relative;
+  background-color: #131313;
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include mobile() {
+    display: none;
+  }
+
+  &--names {
+    width: 45vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: -46px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    @include desktop() {
+      height: 100px;
+      width: 25%;
+      top: -115px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & > a {
+      color: rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+
+      &:hover {
+        background-color: blue;
+      }
+
+      &.active {
+        color: #e3b873;
+        text-decoration: underline;
+      }
+    }
+  }
+  &--img_slider {
+    height: 28.5vw;
+    overflow: hidden;
+  }
+
+  &--images {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 21px;
+
+    & > div {
+      height: 28.5vw;
+
+      & > img {
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &--slider_btn_container {
+    position: absolute;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-content: baseline;
+    z-index: 2;
+
+    @include tablet() {
+      display: none;
+    }
+
+    @include mobile() {
+      display: none;
+    }
+  }
+
+  &--slider_btn_link {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: #e3b873;
+    border-radius: 50%;
+
+    &:hover {
+      background: blue;
+    }
+  }
+}
+
+// *************************************** COMPLETED PROJECTS END ***********************************************
 
 // *************************************** MAIN PAGE END ***********************************************

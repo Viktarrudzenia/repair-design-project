@@ -246,6 +246,18 @@
   color: #e3b873;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .navigation_bar--contact_phone {
+    text-align: end;
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation_bar--contact_phone {
+    text-align: end;
+  }
+}
+
 .navigation_bar--request_a_call_button {
   height: 100%;
   cursor: pointer;
@@ -259,6 +271,10 @@
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
+}
+
+.navigation_bar--request_a_call_button:hover {
+  background-color: blue;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -327,7 +343,7 @@
 }
 
 .turnkey_repair_container {
-  height: 707px;
+  height: 706px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,11 +621,11 @@
 .scroll_down {
   width: 247px;
   height: 97px;
-  position: absolute;
+  position: relative;
+  bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -617,6 +633,19 @@
       -ms-flex-align: center;
           align-items: center;
   background: #131313;
+  z-index: 3;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .scroll_down {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .scroll_down {
+    display: none;
+  }
 }
 
 .scroll_down--link {
@@ -631,6 +660,10 @@
           align-items: center;
 }
 
+.scroll_down--link:hover {
+  background-color: blue;
+}
+
 .scroll_down--text {
   font-family: Yeseva One;
   font-style: normal;
@@ -643,5 +676,416 @@
 
 .scroll_down--image {
   display: block;
+}
+
+.completed_projects_wrapper {
+  height: 750px;
+  position: relative;
+  background: #131313;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 592px auto;
+      grid-template: 1fr / 592px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_wrapper {
+    height: 727px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr / 1fr;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_wrapper {
+    height: 727px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr / 1fr;
+    padding: 0 20px;
+  }
+}
+
+.completed_projects {
+  height: 390px;
+  padding: 0 50px 0 101px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects {
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.completed_projects_heading {
+  padding-bottom: 42px;
+}
+
+.completed_projects_heading--title {
+  height: 66px;
+  width: 155px;
+  margin-bottom: 34px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_heading--title {
+    font-size: 24px;
+    line-height: 120%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_heading--title {
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+  }
+}
+
+.completed_projects_heading--description {
+  height: 86px;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_heading--description {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_heading--description {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 158.48%;
+  }
+}
+
+.completed_projects_swiper--image_container {
+  display: none;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_swiper--image_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_swiper--image_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.completed_projects_swiper--arrows {
+  height: 242px;
+  width: 314px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.completed_projects_swiper--arrow_container {
+  height: 36px;
+  width: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #e3b873;
+}
+
+.completed_projects_swiper--arrow_container:hover {
+  background: blue;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_swiper {
+    display: block;
+    background: red;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_swiper {
+    display: block;
+    height: 340px;
+    background: red;
+  }
+}
+
+.completed_projects_info--all_info {
+  height: 162px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_info--all_info {
+    padding-top: 37px;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_info--all_info {
+    padding-top: 37px;
+  }
+}
+
+.completed_projects_info--title {
+  padding-bottom: 10px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_info--title {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_info--title {
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+}
+
+.completed_projects_info--description {
+  padding: 0 65px 20px 0;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_info--description {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_info--description {
+    font-size: 14px;
+    line-height: 135.84%;
+  }
+}
+
+.completed_projects_info--slider_container {
+  display: none;
+}
+
+.completed_projects_slider {
+  position: relative;
+  background-color: #131313;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_slider {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_slider {
+    display: none;
+  }
+}
+
+.completed_projects_slider--names {
+  width: 45vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: -46px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .completed_projects_slider--names {
+    height: 100px;
+    width: 25%;
+    top: -115px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.completed_projects_slider--names > a {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.completed_projects_slider--names > a:hover {
+  background-color: blue;
+}
+
+.completed_projects_slider--names > a.active {
+  color: #e3b873;
+  text-decoration: underline;
+}
+
+.completed_projects_slider--img_slider {
+  height: 28.5vw;
+  overflow: hidden;
+}
+
+.completed_projects_slider--images {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 21px;
+}
+
+.completed_projects_slider--images > div {
+  height: 28.5vw;
+}
+
+.completed_projects_slider--images > div > img {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.completed_projects_slider--slider_btn_container {
+  position: absolute;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  z-index: 2;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_slider--slider_btn_container {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_slider--slider_btn_container {
+    display: none;
+  }
+}
+
+.completed_projects_slider--slider_btn_link {
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e3b873;
+  border-radius: 50%;
+}
+
+.completed_projects_slider--slider_btn_link:hover {
+  background: blue;
 }
 /*# sourceMappingURL=style.css.map */
