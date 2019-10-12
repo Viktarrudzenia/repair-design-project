@@ -237,13 +237,19 @@
 }
 
 .navigation_bar--contact_phone {
-  cursor: default;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: FuturaDemiC;
   font-size: 14px;
   line-height: 16px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #e3b873;
+}
+
+.navigation_bar--contact_phone:hover {
+  background: blue;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -340,6 +346,10 @@
   .aside_instagram {
     display: none;
   }
+}
+
+.aside_instagram > a:hover {
+  background: blue;
 }
 
 .turnkey_repair_container {

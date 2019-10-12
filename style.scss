@@ -222,12 +222,16 @@ $TV-width: 1440px;
   }
 
   &--contact_phone {
-    cursor: default;
+    width: fit-content;
     font-family: FuturaDemiC;
     font-size: 14px;
     line-height: 16px;
     text-decoration-line: underline;
     color: #e3b873;
+
+    &:hover {
+      background: blue;
+    }
 
     @include tablet() {
       text-align: end;
@@ -299,6 +303,10 @@ $TV-width: 1440px;
 
   @include mobile() {
     display: none;
+  }
+
+  & > a:hover {
+    background: blue;
   }
 }
 
