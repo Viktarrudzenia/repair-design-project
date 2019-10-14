@@ -348,7 +348,8 @@
   }
 }
 
-.aside_instagram > a:hover {
+.aside_instagram > a > img:hover {
+  width: 160%;
   background: blue;
 }
 
@@ -964,6 +965,8 @@
 }
 
 .completed_projects_slider {
+  max-height: 483px;
+  max-width: 850px;
   position: relative;
   background-color: #131313;
 }
@@ -982,6 +985,7 @@
 
 .completed_projects_slider--names {
   width: 45vw;
+  max-width: 800px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,6 +1050,8 @@
 }
 
 .completed_projects_slider--images > div > img {
+  max-width: 680px;
+  max-height: 483px;
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
