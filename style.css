@@ -1104,4 +1104,238 @@
 .completed_projects_slider--slider_btn_link:hover {
   background: blue;
 }
+
+.online_control {
+  height: 1103px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(29%, #131313), color-stop(29.1%, #ffffff));
+  background-image: linear-gradient(to bottom, #131313 29%, #ffffff 29.1%);
+}
+
+.online_control_heading {
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.online_control_heading--text {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.online_control_heading--img_container {
+  height: 28px;
+}
+
+.online_control_heading--video_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .online_control_heading--video_container {
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .online_control_heading--video_container {
+    margin: 0 18px;
+  }
+}
+
+.online_control_heading--video {
+  margin: 31px 0 98px 0;
+}
+
+.online_control_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .online_control_info {
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .online_control_info {
+    margin: 0 18px;
+  }
+}
+
+.online_control_info--text {
+  max-width: 681px;
+}
+
+.online_control_submit_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 91px;
+}
+
+.online_control_submit_form--data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.online_control_submit_form--input_name, .online_control_submit_form--input_phone {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+  border: 0;
+  outline: none;
+}
+
+.online_control_submit_form--input_name_container, .online_control_submit_form--input_phone_container {
+  width: 231px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 50px;
+}
+
+.online_control_submit_form--input_name_container::before, .online_control_submit_form--input_phone_container::before {
+  content: "";
+  width: 231px;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #36363630;
+}
+
+.online_control_submit_form--input_name_container::after, .online_control_submit_form--input_phone_container::after {
+  content: "";
+}
+
+.online_control_submit_form--input_name_container > label, .online_control_submit_form--input_phone_container > label {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.online_control_submit_form--submit {
+  height: 51px;
+  width: 200px;
+  background: #e3b873;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.online_control_submit_form--input_checkbox_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+}
+
+.online_control_submit_form--input_checkbox_container > input:checked ~ label::after {
+  content: url(./assets/images/check_mark.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e3b873;
+  border-radius: 1px;
+}
+
+.online_control_submit_form--input_checkbox_container > label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.online_control_submit_form--input_checkbox_container > label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e3b87380;
+  border-radius: 1px;
+}
+
+.online_control_submit_form--input_checkbox {
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

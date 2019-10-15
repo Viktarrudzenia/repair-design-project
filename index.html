@@ -239,38 +239,67 @@
               </div>
             </div>
             <div class="online_control_heading--video_container">
-              <video class="online_control_heading--video" src=""></video>
+              <iframe
+                class="online_control_heading--video"
+                width="817"
+                height="434"
+                src="https://www.youtube.com/embed/isTXSavwoSk"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="online_control_info">
-              At each facility, a camera is installed that broadcasts the progress of work on the
-              clock. At any time, you can go to our website and monitor the progress of work in your
-              apartment. You can watch the live broadcast from one of our facilities! Leave a
-              request below and you will receive a link to the broadcast.
+              <div class="online_control_info--text">
+                At each facility, a camera is installed that broadcasts the progress of work on the
+                clock. At any time, you can go to our website and monitor the progress of work in
+                your apartment. You can watch the live broadcast from one of our facilities! Leave a
+                request below and you will receive a link to the broadcast.
+              </div>
             </div>
+
+            <!------------------------- ONLINE CONTROL FORM --------------------------------->
+
             <div class="online_control_submit_form_container">
               <form class="online_control_submit_form" action="index.html">
-                <label for="online_control_name">Name</label>
-                <input
-                  id="online_control_name"
-                  class="online_control_submit_form--input_name"
-                  placeholder="What is your name:"
-                  type="text"
-                />
-                <label for="online_control_phone">Phone</label>
-                <input
-                  id="online_control_phone"
-                  class="online_control_submit_form--input_phone"
-                  placeholder="Your phone number:"
-                  type="text"
-                />
-                <input
-                  type="checkbox"
-                  id="online_control_agreement"
-                  class="online_control_submit_form--input_checkbox"
-                />
-                <label for="online_control_agreement"></label
-                ><span>I agree to the processing of personal data</span>
-                <input class="online_control_submit_form--submit" type="submit" value="SUBMIT" />
+                <div class="online_control_submit_form--data">
+                  <div class="online_control_submit_form--input_name_container">
+                    <label for="online_control_name">Name</label>
+                    <input
+                      id="online_control_name"
+                      class="online_control_submit_form--input_name"
+                      placeholder="What is your name:"
+                      type="text"
+                    />
+                  </div>
+                  <div class="online_control_submit_form--input_phone_container">
+                    <label for="online_control_phone">Phone</label>
+                    <input
+                      id="online_control_phone"
+                      class="online_control_submit_form--input_phone"
+                      placeholder="Your phone number:"
+                      type="text"
+                    />
+                  </div>
+                  <div class="online_control_submit_form--submit_container">
+                    <input
+                      class="online_control_submit_form--submit"
+                      type="submit"
+                      value="SUBMIT"
+                    />
+                  </div>
+                </div>
+                <div class="online_control_submit_form--input_checkbox_container">
+                  <input
+                    type="checkbox"
+                    id="online_control_agreement"
+                    class="online_control_submit_form--input_checkbox"
+                    checked="checked"
+                  />
+                  <label for="online_control_agreement"
+                    >I agree to the processing of personal data</label
+                  >
+                </div>
               </form>
             </div>
           </div>
