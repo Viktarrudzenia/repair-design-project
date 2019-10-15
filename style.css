@@ -1608,4 +1608,147 @@
   height: 18px;
   cursor: pointer;
 }
+
+.types_of_repair {
+  height: 830px;
+}
+
+.types_of_repair_heading {
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin-bottom: 31px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_heading {
+    height: 71px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_heading {
+    height: 71px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+}
+
+.types_of_repair_examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 608px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.types_of_repair_examples--section {
+  position: relative;
+}
+
+.types_of_repair_examples--heading {
+  padding: 25px 0 13px 34px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+
+.types_of_repair_examples--info_container {
+  width: 330px;
+  height: 286px;
+  position: absolute;
+  bottom: 0px;
+  left: 31px;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.types_of_repair_examples--list_container {
+  width: 267px;
+  height: 178px;
+  padding-left: 34px;
+}
+
+.types_of_repair_examples--overhaul {
+  margin: 0 30px;
+}
+
+.types_of_repair_examples--item {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+.types_of_repair_examples--buy_btn_container {
+  position: absolute;
+  bottom: -23px;
+  left: 31px;
+  z-index: 3;
+}
+
+.types_of_repair_examples--buy_btn {
+  height: 54px;
+  width: 228px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  background: #e3b873;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--buy_btn {
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--buy_btn {
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+}
+
+.types_of_repair_examples--buy_btn:hover {
+  background: blue;
+}
 /*# sourceMappingURL=style.css.map */

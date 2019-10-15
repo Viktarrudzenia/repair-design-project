@@ -1261,4 +1261,128 @@ $TV-width: 1440px;
 
 // *************************************** ONLINE CONTROL END ***********************************************
 
+// *************************************** TYPES OF REPAIR START ********************************************
+
+.types_of_repair {
+  height: 830px;
+}
+
+.types_of_repair_heading {
+  height: 67px;
+  display: flex;
+  flex-direction: column;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  margin-bottom: 31px;
+
+  @include tablet() {
+    height: 71px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  @include mobile() {
+    height: 71px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+}
+
+.types_of_repair_examples {
+  display: flex;
+  height: 608px;
+  justify-content: center;
+
+  &--section {
+    position: relative;
+  }
+
+  &--heading {
+    padding: 25px 0 13px 34px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+  }
+
+  &--info_container {
+    width: 330px;
+    height: 286px;
+    position: absolute;
+    bottom: 0px;
+    left: 31px;
+    background: #ffffff;
+    z-index: 2;
+  }
+
+  &--list_container {
+    width: 267px;
+    height: 178px;
+    padding-left: 34px;
+  }
+
+  &--overhaul {
+    margin: 0 30px;
+  }
+
+  &--item {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 25px;
+    color: #959595;
+  }
+
+  &--buy_btn_container {
+    position: absolute;
+    bottom: -23px;
+    left: 31px;
+    z-index: 3;
+  }
+
+  &--buy_btn {
+    height: 54px;
+    width: 228px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    background: #e3b873;
+    color: #ffffff;
+    text-decoration: none;
+
+    @include tablet() {
+      height: 40px;
+      width: 190px;
+      font-size: 15px;
+      line-height: 138.6%;
+    }
+
+    @include mobile() {
+      height: 40px;
+      width: 190px;
+      font-size: 15px;
+      line-height: 138.6%;
+    }
+
+    &:hover {
+      background: blue;
+    }
+  }
+}
+
+// *************************************** TYPES OF REPAIR END **********************************************
+
 // *************************************** MAIN PAGE END ***********************************************
