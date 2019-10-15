@@ -1609,10 +1609,6 @@
   cursor: pointer;
 }
 
-.types_of_repair {
-  height: 830px;
-}
-
 .types_of_repair_heading {
   height: 67px;
   display: -webkit-box;
@@ -1649,11 +1645,17 @@
   }
 }
 
+.types_of_repair_heading--text {
+  padding-bottom: 13px;
+}
+
 .types_of_repair_examples {
+  min-height: 608px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 608px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1661,6 +1663,8 @@
 
 .types_of_repair_examples--section {
   position: relative;
+  margin: 0 15px 59px 15px;
+  padding: 0 0 179px 0;
 }
 
 .types_of_repair_examples--heading {
@@ -1677,7 +1681,7 @@
   width: 330px;
   height: 286px;
   position: absolute;
-  bottom: 0px;
+  bottom: 32px;
   left: 31px;
   background: #ffffff;
   z-index: 2;
@@ -1702,7 +1706,7 @@
 
 .types_of_repair_examples--buy_btn_container {
   position: absolute;
-  bottom: -23px;
+  bottom: 0px;
   left: 31px;
   z-index: 3;
 }
