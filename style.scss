@@ -878,6 +878,20 @@ $TV-width: 1440px;
 .online_control {
   height: 1103px;
   background-image: linear-gradient(to bottom, #131313 29%, #ffffff 29.1%);
+
+  @include desktop() {
+    height: 1000px;
+  }
+
+  @include tablet() {
+    height: 909px;
+    background-image: linear-gradient(to bottom, #131313 92%, #ffffff 84.1%);
+  }
+
+  @include mobile() {
+    height: 909px;
+    background-image: linear-gradient(to bottom, #131313 92%, #ffffff 84.1%);
+  }
 }
 
 .online_control_heading {
@@ -886,6 +900,18 @@ $TV-width: 1440px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @include desktop() {
+    height: 69px;
+  }
+
+  @include tablet() {
+    height: 72px;
+  }
+
+  @include mobile() {
+    height: 74px;
+  }
 
   &--text {
     font-family: Yeseva One;
@@ -916,7 +942,21 @@ $TV-width: 1440px;
   }
 
   &--video {
+    width: 817px;
+    height: 434px;
     margin: 31px 0 98px 0;
+
+    @include tablet() {
+      margin: 40px 0 51px 0;
+      width: 500px;
+      height: 257px;
+    }
+
+    @include mobile() {
+      margin: 40px 0 51px 0;
+      width: 340px;
+      height: 207px;
+    }
   }
 }
 
@@ -929,16 +969,35 @@ $TV-width: 1440px;
   text-align: center;
   color: #363636;
 
+  @include desktop() {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
   @include tablet() {
+    color: #ffffff;
     margin: 0 18px;
+    font-size: 16px;
+    line-height: 150%;
   }
 
   @include mobile() {
+    color: #ffffff;
     margin: 0 18px;
+    font-size: 14px;
+    line-height: 169.8%;
   }
 
   &--text {
     max-width: 681px;
+
+    @include tablet() {
+      height: 107px;
+    }
+
+    @include mobile() {
+      height: 107px;
+    }
   }
 }
 
@@ -950,9 +1009,27 @@ $TV-width: 1440px;
   align-items: center;
   margin-top: 91px;
 
+  @include tablet() {
+    position: relative;
+    margin-top: 61px;
+  }
+
+  @include mobile() {
+    position: relative;
+    margin-top: 61px;
+  }
+
   &--data {
     display: flex;
     margin-bottom: 31px;
+
+    @include tablet() {
+      flex-direction: column;
+    }
+
+    @include mobile() {
+      flex-direction: column;
+    }
   }
 
   &--input_name,
@@ -963,6 +1040,44 @@ $TV-width: 1440px;
     color: #363636;
     border: 0;
     outline: none;
+
+    @include tablet() {
+      line-height: 120%;
+      background-color: #131313;
+      color: #ffffff;
+
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+      &::-moz-placeholder {
+        color: #ffffff;
+      } /* Firefox 19+ */
+      &:-moz-placeholder {
+        color: #ffffff;
+      } /* Firefox 18- */
+      &:-ms-input-placeholder {
+        color: #ffffff;
+      }
+    }
+
+    @include mobile() {
+      line-height: 138%;
+      background-color: #131313;
+      color: #ffffff;
+
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+      &::-moz-placeholder {
+        color: #ffffff;
+      } /* Firefox 19+ */
+      &:-moz-placeholder {
+        color: #ffffff;
+      } /* Firefox 18- */
+      &:-ms-input-placeholder {
+        color: #ffffff;
+      }
+    }
   }
 
   &--input_name_container,
@@ -973,6 +1088,18 @@ $TV-width: 1440px;
     flex-direction: column;
     margin-right: 50px;
 
+    @include tablet() {
+      width: 340px;
+      height: 45px;
+      margin-right: 0;
+    }
+
+    @include mobile() {
+      width: 340px;
+      height: 45px;
+      margin-right: 0;
+    }
+
     &::before {
       content: "";
       width: 231px;
@@ -980,6 +1107,24 @@ $TV-width: 1440px;
       position: absolute;
       bottom: 0px;
       background-color: #36363630;
+
+      @include tablet() {
+        content: "";
+        width: 340px;
+        height: 1px;
+        position: absolute;
+        bottom: 0px;
+        background-color: #ffffff;
+      }
+
+      @include mobile() {
+        content: "";
+        width: 340px;
+        height: 1px;
+        position: absolute;
+        bottom: 0px;
+        background-color: #ffffff;
+      }
     }
 
     &::after {
@@ -991,12 +1136,43 @@ $TV-width: 1440px;
       font-size: 15px;
       line-height: 20px;
       color: rgba(54, 54, 54, 0.5);
+
+      @include tablet() {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      @include mobile() {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  &--input_name_container {
+    @include tablet() {
+      margin-bottom: 50px;
+    }
+
+    @include mobile() {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--submit_container {
+    @include tablet() {
+      position: absolute;
+      bottom: -85px;
+    }
+
+    @include mobile() {
+      position: absolute;
+      bottom: -130px;
     }
   }
 
   &--submit {
     height: 51px;
     width: 200px;
+    cursor: pointer;
     background: #e3b873;
     font-family: FuturaDemiC;
     font-size: 15px;
@@ -1004,6 +1180,20 @@ $TV-width: 1440px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+
+    @include tablet() {
+      height: 51px;
+      width: 340px;
+    }
+
+    @include mobile() {
+      height: 51px;
+      width: 340px;
+    }
+
+    &:hover {
+      background: blue;
+    }
   }
 
   &--input_checkbox_container {
@@ -1014,6 +1204,18 @@ $TV-width: 1440px;
     font-size: 16px;
     line-height: 22px;
     color: #181818;
+
+    @include tablet() {
+      color: #ffffff;
+    }
+
+    @include mobile() {
+      color: #ffffff;
+    }
+
+    &:hover {
+      background: #e3b87377;
+    }
 
     & > input:checked ~ label::after {
       content: url(./assets/images/check_mark.svg);
