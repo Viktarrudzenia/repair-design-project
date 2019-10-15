@@ -1609,6 +1609,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 375px) {
+  .types_of_repair {
+    width: 375px;
+  }
+}
+
 .types_of_repair_heading {
   height: 67px;
   display: -webkit-box;
@@ -1667,6 +1673,18 @@
   padding: 0 0 179px 0;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--section {
+    margin: 0 18px -30px 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--section {
+    margin: 0 18px -30px 18px;
+  }
+}
+
 .types_of_repair_examples--heading {
   padding: 25px 0 13px 34px;
   font-family: Yeseva One;
@@ -1677,6 +1695,18 @@
   color: #363636;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--heading {
+    padding: 21px 0 10px 34px;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--heading {
+    padding: 21px 0 10px 34px;
+  }
+}
+
 .types_of_repair_examples--info_container {
   width: 330px;
   height: 286px;
@@ -1685,6 +1715,26 @@
   left: 31px;
   background: #ffffff;
   z-index: 2;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--info_container {
+    height: 241px;
+    width: 270px;
+    bottom: 87px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--info_container {
+    height: 241px;
+    width: 270px;
+    bottom: 87px;
+    left: 0px;
+  }
 }
 
 .types_of_repair_examples--list_container {
@@ -1704,11 +1754,62 @@
   color: #959595;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--item {
+    font-size: 14px;
+    line-height: 169.8%;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--item {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--image_container {
+    height: 365px;
+    width: 340px;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--image_container {
+    height: 365px;
+    width: 340px;
+  }
+}
+
+.types_of_repair_examples--image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .types_of_repair_examples--buy_btn_container {
   position: absolute;
   bottom: 0px;
   left: 31px;
   z-index: 3;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.5);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.5);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .types_of_repair_examples--buy_btn_container {
+    bottom: 68px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .types_of_repair_examples--buy_btn_container {
+    bottom: 68px;
+    left: 0px;
+  }
 }
 
 .types_of_repair_examples--buy_btn {
