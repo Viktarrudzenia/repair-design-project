@@ -276,7 +276,7 @@
                       id="online_control_phone"
                       class="online_control_submit_form--input_phone"
                       placeholder="Your phone number:"
-                      type="text"
+                      type="tel"
                     />
                   </div>
                   <div class="online_control_submit_form--submit_container">
@@ -512,46 +512,68 @@
 
             <div class="leave_request_submit_form_container">
               <form class="leave_request_submit_form" action="index.html">
-                <h4>Leave a request for free departure of the measurer</h4>
-                <label for="leave_request_name">Name</label>
-                <input
-                  id="leave_request_name"
-                  class="leave_request_submit_form--input_name"
-                  placeholder="What is your name:"
-                  type="text"
-                />
-                <label for="leave_request_phone">Phone</label>
-                <input
-                  id="leave_request_phone"
-                  class="leave_request_submit_form--input_phone"
-                  placeholder="Your phone number:"
-                  type="text"
-                />
-                <label for="leave_request_email">Email</label>
-                <input
-                  id="leave_request_email"
-                  class="leave_request_submit_form--input_email"
-                  placeholder="Your email:"
-                  type="email"
-                />
-                <input
-                  type="checkbox"
-                  id="leave_request_agreement"
-                  class="leave_request_submit_form--input_checkbox"
-                />
-                <label for="leave_request_agreement"></label
-                ><span>I agree to the processing of personal data</span>
-                <input
-                  class="leave_request_submit_form--submit"
-                  type="submit"
-                  value="Call the measurer"
-                />
+                <div class="leave_request_submit_form--heading">
+                  Leave a request for free departure of the measurer
+                </div>
+                <div class="leave_request_submit_form--data">
+                  <div class="leave_request_submit_form--input_name_container">
+                    <label for="leave_request_name">Name</label>
+                    <input
+                      id="leave_request_name"
+                      class="leave_request_submit_form--input_name"
+                      placeholder="What is your name:"
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="leave_request_submit_form--input_phone_container">
+                    <label for="leave_request_phone">Phone</label>
+                    <input
+                      id="leave_request_phone"
+                      class="leave_request_submit_form--input_phone"
+                      placeholder="Your phone number:"
+                      type="tel"
+                    />
+                  </div>
+
+                  <div class="leave_request_submit_form--input_email_container">
+                    <label for="leave_request_phone">Email</label>
+                    <input
+                      id="leave_request_phone"
+                      class="leave_request_submit_form--input_phone"
+                      placeholder="Your email:"
+                      type="email"
+                    />
+                  </div>
+                  <div class="leave_request_submit_form--submit_container">
+                    <input
+                      class="leave_request_submit_form--submit"
+                      type="submit"
+                      value="CALL THE MEASURER"
+                    />
+                  </div>
+                </div>
+                <div class="leave_request_submit_form--input_checkbox_container">
+                  <input
+                    type="checkbox"
+                    id="leave_request_agreement"
+                    class="leave_request_submit_form--input_checkbox"
+                    checked="checked"
+                  />
+                  <label for="leave_request_agreement"
+                    >I agree to the processing of personal data</label
+                  >
+                </div>
               </form>
             </div>
           </div>
           <div class="leave_request_piggy_bank">
             <div class="leave_request_piggy_bank--img_container">
-              <img class="leave_request_piggy_bank--img" src="" alt="piggy bank" />
+              <img
+                class="leave_request_piggy_bank--img"
+                src="./assets/images/leave_request_piggy_bank--img.svg"
+                alt="piggy bank"
+              />
             </div>
             <div class="leave_request_piggy_bank--text">
               Help save 10 - 20% of the cost of materials

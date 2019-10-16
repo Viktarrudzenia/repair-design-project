@@ -306,7 +306,6 @@ $TV-width: 1440px;
   }
 
   & > a > img:hover {
-    width: 160%;
     background: blue;
   }
 }
@@ -1472,14 +1471,14 @@ $TV-width: 1440px;
 
 .leave_request_background_image {
   position: relative;
-  // &--img {
-  //   object-fit: cover;
-  //   width: 100%;
-  // }
 }
 
 .leave_request_left_part {
   position: relative;
+
+  @media (max-width: 1353px) {
+    display: none;
+  }
 }
 
 .leave_request_advantage_list {
@@ -1600,6 +1599,230 @@ $TV-width: 1440px;
       line-height: 25px;
       text-align: center;
       color: #ffffff;
+    }
+  }
+}
+
+.leave_request_submit_form_container {
+  @media (max-width: 1353px) {
+    width: 100%;
+  }
+}
+
+.leave_request_submit_form {
+  width: 506px;
+  height: 509px;
+  background: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  margin: 120px 0 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 1353px) {
+    margin: 20px auto;
+  }
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include mobile() {
+    display: none;
+  }
+
+  &--heading {
+    width: 297px;
+    height: 47px;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 28px 0 39px 0;
+  }
+
+  &--data {
+    display: flex;
+    margin-bottom: 31px;
+    flex-direction: column;
+  }
+
+  &--input_name,
+  &--input_phone {
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    outline: none;
+    line-height: 138%;
+    background-color: #131313;
+    color: #ffffff;
+
+    &::-webkit-input-placeholder {
+      color: #ffffff;
+    }
+    &::-moz-placeholder {
+      color: #ffffff;
+    } /* Firefox 19+ */
+    &:-moz-placeholder {
+      color: #ffffff;
+    } /* Firefox 18- */
+    &:-ms-input-placeholder {
+      color: #ffffff;
+    }
+  }
+
+  &--input_name_container,
+  &--input_phone_container,
+  &--input_email_container {
+    width: 408px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+
+    &::before {
+      content: "";
+      width: 408px;
+      height: 2px;
+      position: absolute;
+      bottom: 0px;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    &::after {
+      content: "";
+    }
+
+    & > label {
+      font-family: FuturaBookC;
+      font-size: 15px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &--input_name_container,
+  &--input_phone_container {
+    margin-bottom: 50px;
+  }
+
+  &--submit_container {
+    position: absolute;
+    bottom: 27px;
+    right: 49px;
+  }
+
+  &--submit {
+    height: 51px;
+    width: 213px;
+    cursor: pointer;
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #e3b873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+
+    &:hover {
+      background: blue;
+    }
+  }
+
+  &--input_checkbox_container {
+    position: relative;
+    right: 58px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+
+    &:hover {
+      background: #e3b87377;
+    }
+
+    & > input:checked ~ label::after {
+      content: url(./assets/images/check_mark.svg);
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      left: 0px;
+      top: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e3b873;
+      border-radius: 1px;
+    }
+
+    & > label {
+      margin-left: 10px;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 0px;
+        top: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e3b87380;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  &--input_checkbox {
+    opacity: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+.leave_request_piggy_bank {
+  @media (max-width: 1353px) {
+    display: none;
+  }
+
+  &--text {
+    position: relative;
+    bottom: 64px;
+    left: 945px;
+    width: 344px;
+    height: 47px;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 25px;
+    color: #e3b873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+
+    &::before {
+      content: url(./assets/images/leave_request_piggy_bank--img.svg);
+      position: relative;
+      left: -94px;
+      bottom: -17px;
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #e3b873;
+      box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
     }
   }
 }
