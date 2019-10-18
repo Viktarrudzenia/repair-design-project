@@ -3522,4 +3522,203 @@
   bottom: 20px;
   background: #e3b873;
 }
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .our_clients {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .our_clients {
+    display: none;
+  }
+}
+
+.our_clients_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_clients_heading--title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+.our_clients_heading--image_container {
+  padding: 13px 0 24px 0;
+}
+
+.our_clients_heading--text {
+  width: 390px;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+.our_clients_gratitudes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 39px 100px 132px 100px;
+}
+
+@media (max-width: 1371px) {
+  .our_clients_gratitudes {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.our_clients_gratitudes--review {
+  padding: 20px 30px 0 20px;
+}
+
+.our_clients_gratitudes--man {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.our_clients_gratitudes--item {
+  width: 376px;
+  height: 428px;
+  position: relative;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1371px) {
+  .our_clients_gratitudes--item[class*="third"] {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .our_clients_gratitudes--item[class*="second"] {
+    display: none;
+  }
+}
+
+.our_clients_gratitudes--name {
+  width: 178px;
+  height: 42px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+}
+
+.our_clients_gratitudes--text {
+  width: 324px;
+  height: 221px;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 27px;
+  color: #959595;
+}
+
+.our_clients_gratitudes--image_container {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 23px;
+}
+
+.our_clients_gratitudes--order {
+  width: 294px;
+  height: 54px;
+  position: absolute;
+  bottom: -27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e3b873;
+  -webkit-box-shadow: 5px 5px 20px #e3b873;
+          box-shadow: 5px 5px 20px #e3b873;
+}
+
+.our_clients_gratitudes--meter {
+  position: relative;
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_clients_gratitudes--meter_amount {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.our_clients_gratitudes--meter_separator {
+  position: absolute;
+  height: 54px;
+  border: 0.75px solid #ffffff;
+  right: 0px;
+}
+
+.our_clients_gratitudes--days {
+  width: 158px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_clients_gratitudes--days_amount {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
