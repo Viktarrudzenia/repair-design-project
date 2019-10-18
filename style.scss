@@ -2016,4 +2016,34 @@ $TV-width: 1440px;
 
 // *************************************** REALIZE FANTASIES SECTION END **********************************************
 
+.design_project {
+  &_heading {
+    height: 147px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &--title {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #181818;
+    }
+
+    &--text {
+      max-width: 700px;
+      font-family: FuturaBookC;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #363636;
+    }
+  }
+}
+
 // *************************************** MAIN PAGE END ***********************************************
