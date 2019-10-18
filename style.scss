@@ -2019,6 +2019,8 @@ $TV-width: 1440px;
 // *************************************** DESIGN PROJECT SECTION START *************************************************
 
 .design_project {
+  background-image: linear-gradient(to top, #131313 45%, #ffffff 45.1%);
+
   @include tablet() {
     padding-top: 52px;
     background: #131313;
@@ -2362,5 +2364,183 @@ $TV-width: 1440px;
 }
 
 // *************************************** DESIGN PROJECT SECTION END *************************************************
+
+// *************************************** STEPS TO GOAL SECTION START *************************************************
+
+.steps_to_goal {
+  height: 686px; //652px
+  background: #131313;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+
+  @media (max-width: 1265px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 843px) {
+    display: none;
+  }
+
+  &_left_part {
+    width: 337px;
+
+    @media (max-width: 1265px) {
+      display: none;
+    }
+  }
+
+  &_heading {
+    &--title {
+      width: 160px;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #e3b873;
+      padding: 18px 0 92px 0;
+    }
+
+    &--subtitle {
+      font-family: FuturaDemiC;
+      font-size: 15px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding-top: 30px;
+    }
+  }
+
+  &_step_info {
+    height: 323px;
+    width: 337px;
+
+    &--choosen {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &--heading {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #e3b873;
+      padding: 22px 0 16px 0;
+    }
+
+    &--text {
+      font-family: FuturaBookC;
+      font-size: 15px;
+      line-height: 25px;
+      color: #ffffff;
+    }
+  }
+
+  &_pagination {
+    display: flex;
+    justify-content: space-around;
+
+    &--left_arrow_container,
+    &--right_arrow_container {
+      & > a:hover {
+        background: blue;
+      }
+    }
+
+    &--dots {
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+
+      & > a {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+
+        &[class="active"] {
+          background: #ffffff;
+        }
+
+        &:hover {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  &_right_side {
+    width: 765px;
+    padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &_list {
+      height: 178px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template: 90px / repeat(3, 1fr);
+
+      &--item_container {
+        opacity: 0.2;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+          opacity: 1;
+          background: blue;
+        }
+        &[class*="active"] {
+          opacity: 1;
+        }
+
+        &[class*="justify_center"] {
+          justify-self: center;
+        }
+
+        &[class*="justify_end"] {
+          width: 100px;
+          justify-self: flex-end;
+        }
+      }
+
+      &--item_number {
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration-color: #e3b873;
+      }
+
+      &--item_text {
+        max-width: 150px;
+        color: #ffffff;
+        text-decoration: none;
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+// *************************************** STEPS TO GOAL SECTION END *************************************************
 
 // *************************************** MAIN PAGE END ***********************************************
