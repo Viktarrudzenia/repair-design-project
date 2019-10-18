@@ -2543,4 +2543,145 @@ $TV-width: 1440px;
 
 // *************************************** STEPS TO GOAL SECTION END *************************************************
 
-// *************************************** MAIN PAGE END ***********************************************
+// *************************************** OUR TEAM SECTION START *************************************************
+
+.our_team {
+  background-image: linear-gradient(to bottom, #131313 50%, #ffffff 50.1%);
+
+  &_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 67px 0 73px 0;
+
+    &--title {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &--image_container {
+      padding: 12px 0 23px 0;
+    }
+
+    &--text {
+      font-family: FuturaBookC;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  &_staff {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 200px;
+
+    &--dmitry,
+    &--larisa,
+    &--alexey {
+      padding: 0 10px;
+      position: relative;
+    }
+
+    &--logo_container {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: -35px;
+      top: -35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e3b873;
+    }
+
+    &--info_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      bottom: 81px;
+    }
+
+    &--info {
+      height: 93px;
+      width: 233px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+    }
+
+    &--info_name {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #181818;
+      padding-bottom: 9px;
+    }
+
+    &--info_job {
+      font-family: FuturaBookC;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      color: #959595;
+    }
+
+    &--work_exp {
+      width: 233px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #e3b873;
+    }
+  }
+
+  &_addition {
+    width: 526px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 89px auto;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #363636;
+
+    &--separator {
+      height: 2px;
+      width: 55px;
+      position: relative;
+      bottom: 20px;
+      background: #e3b873;
+    }
+  }
+}
+
+// *************************************** OUR TEAM SECTION END *************************************************
+
+// *************************************** MAIN PAGE END ************************************************************
