@@ -2548,6 +2548,15 @@ $TV-width: 1440px;
 .our_team {
   background-image: linear-gradient(to bottom, #131313 50%, #ffffff 50.1%);
 
+  @include tablet() {
+    background: #131313;
+  }
+
+  @include mobile() {
+    width: 375px;
+    background: #131313;
+  }
+
   &_heading {
     display: flex;
     flex-direction: column;
@@ -2564,6 +2573,16 @@ $TV-width: 1440px;
       text-align: center;
       text-transform: uppercase;
       color: #ffffff;
+
+      @include tablet() {
+        font-size: 22px;
+        line-height: 138.6%;
+      }
+
+      @include mobile() {
+        font-size: 22px;
+        line-height: 138.6%;
+      }
     }
 
     &--image_container {
@@ -2571,11 +2590,27 @@ $TV-width: 1440px;
     }
 
     &--text {
+      width: 476px;
       font-family: FuturaBookC;
       font-size: 20px;
       line-height: 27px;
       text-align: center;
       color: #ffffff;
+      margin: 0 50px;
+
+      @include tablet() {
+        width: 340px;
+        font-size: 15px;
+        line-height: 135.84%;
+        margin: 0 17px;
+      }
+
+      @include mobile() {
+        width: 340px;
+        font-size: 15px;
+        line-height: 135.84%;
+        margin: 0 17px;
+      }
     }
   }
 
@@ -2586,23 +2621,86 @@ $TV-width: 1440px;
     flex-wrap: wrap;
     padding: 0 200px;
 
+    @include tablet() {
+      padding: 0 0 0 25px;
+    }
+
+    @include mobile() {
+      padding: 0 0 0 25px;
+    }
+
     &--dmitry,
     &--larisa,
     &--alexey {
       padding: 0 10px;
       position: relative;
+
+      @include mobile() {
+        padding: 0;
+      }
     }
 
     &--logo_container {
       width: 70px;
       height: 70px;
       position: absolute;
-      left: -35px;
+      left: -25px;
       top: -35px;
       display: flex;
       justify-content: center;
       align-items: center;
       background: #e3b873;
+
+      @include mobile() {
+        left: -35px;
+      }
+    }
+
+    &--photo_container {
+      &_dmitry {
+        width: 272px;
+        height: 358px;
+        background: url(./assets/images/our_team_staff--dmitry_photo.png);
+        background-size: cover;
+
+        @include tablet() {
+          width: 304px;
+        }
+
+        @include mobile() {
+          width: 304px;
+        }
+      }
+
+      &_larisa {
+        width: 272px;
+        height: 358px;
+        background: url(./assets/images/our_team_staff--larisa_photo.png);
+        background-size: cover;
+
+        @include tablet() {
+          width: 304px;
+        }
+
+        @include mobile() {
+          width: 304px;
+        }
+      }
+
+      &_alexey {
+        width: 272px;
+        height: 358px;
+        background: url(./assets/images/our_team_staff--alexey_photo.png);
+        background-size: cover;
+
+        @include tablet() {
+          width: 304px;
+        }
+
+        @include mobile() {
+          width: 304px;
+        }
+      }
     }
 
     &--info_container {
@@ -2671,6 +2769,14 @@ $TV-width: 1440px;
     line-height: 34px;
     text-align: center;
     color: #363636;
+
+    @include tablet() {
+      display: none;
+    }
+
+    @include mobile() {
+      display: none;
+    }
 
     &--separator {
       height: 2px;
