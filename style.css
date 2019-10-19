@@ -753,6 +753,7 @@
 }
 
 .completed_projects_heading {
+  position: relative;
   padding-bottom: 42px;
 }
 
@@ -768,6 +769,18 @@
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
+}
+
+.completed_projects_heading--title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  display: block;
+  left: 161px;
+  top: 52px;
+  width: 92px;
+  height: 2px;
+  background: #e3b873;
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -1265,6 +1278,7 @@
 }
 
 .online_control_info--text {
+  position: relative;
   max-width: 681px;
 }
 
@@ -1278,6 +1292,83 @@
   .online_control_info--text {
     height: 107px;
   }
+}
+
+.online_control_info--text::after {
+  content: "";
+  width: 55px;
+  height: 2px;
+  position: absolute;
+  top: -35px;
+  left: 320px;
+  display: block;
+  background: #e3b873;
+  border-radius: 30px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .online_control_info--text::after {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .online_control_info--text::after {
+    display: none;
+  }
+}
+
+.completed_projects_pagination {
+  position: absolute;
+  bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_pagination {
+    display: none;
+  }
+}
+
+.completed_projects_pagination--left_arrow_container > a:hover, .completed_projects_pagination--right_arrow_container > a:hover {
+  background: blue;
+}
+
+.completed_projects_pagination--dots {
+  width: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 30px;
+}
+
+.completed_projects_pagination--dots > a {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.completed_projects_pagination--dots > a[class="active"] {
+  background: #ffffff;
+}
+
+.completed_projects_pagination--dots > a:hover {
+  background: blue;
 }
 
 .online_control_submit_form {

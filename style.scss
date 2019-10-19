@@ -597,6 +597,7 @@ $TV-width: 1440px;
 }
 
 .completed_projects_heading {
+  position: relative;
   padding-bottom: 42px;
 
   &--title {
@@ -611,6 +612,18 @@ $TV-width: 1440px;
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #e3b873;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      display: block;
+      left: 161px;
+      top: 52px;
+      width: 92px;
+      height: 2px;
+      background: #e3b873;
+    }
 
     @include tablet() {
       font-size: 24px;
@@ -988,6 +1001,7 @@ $TV-width: 1440px;
   }
 
   &--text {
+    position: relative;
     max-width: 681px;
 
     @include tablet() {
@@ -996,6 +1010,71 @@ $TV-width: 1440px;
 
     @include mobile() {
       height: 107px;
+    }
+
+    &::after {
+      content: "";
+      width: 55px;
+      height: 2px;
+      position: absolute;
+      top: -35px;
+      left: 320px;
+      display: block;
+      background: #e3b873;
+      border-radius: 30px;
+
+      @include tablet() {
+        display: none;
+      }
+
+      @include mobile() {
+        display: none;
+      }
+    }
+  }
+}
+
+.completed_projects_pagination {
+  position: absolute;
+  bottom: 130px;
+  display: flex;
+  justify-content: space-around;
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include mobile() {
+    display: none;
+  }
+
+  &--left_arrow_container,
+  &--right_arrow_container {
+    & > a:hover {
+      background: blue;
+    }
+  }
+
+  &--dots {
+    width: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+
+    & > a {
+      width: 10px;
+      height: 10px;
+      display: block;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+
+      &[class="active"] {
+        background: #ffffff;
+      }
+
+      &:hover {
+        background: blue;
+      }
     }
   }
 }
