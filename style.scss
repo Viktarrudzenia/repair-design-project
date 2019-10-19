@@ -623,6 +623,14 @@ $TV-width: 1440px;
       width: 92px;
       height: 2px;
       background: #e3b873;
+
+      @include tablet() {
+        display: none;
+      }
+
+      @include mobile() {
+        display: none;
+      }
     }
 
     @include tablet() {

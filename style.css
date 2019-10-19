@@ -784,6 +784,18 @@
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
+  .completed_projects_heading--title::after {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .completed_projects_heading--title::after {
+    display: none;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
   .completed_projects_heading--title {
     font-size: 24px;
     line-height: 120%;
