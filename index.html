@@ -307,7 +307,7 @@
         </section>
         <!--------------------------------------------------------
 
-                    TYPES OF REPAIR SECTION
+                        TYPES OF REPAIR SECTION
 
         --------------------------------------------------------->
         <section>
@@ -1328,43 +1328,68 @@
                               QUESTION FORM SECTION
 
         --------------------------------------------------------->
-        <!-- 
+
         <section>
-          <div class="question_form_container">
-            <form class="question_form" action="index.html">
-              <h2>have any questions?</h2>
-              <label for="question_form_name">Name</label>
-              <input
-                id="question_form_name"
-                class="question_form--input_name"
-                placeholder="What is your name:"
-                type="text"
-              />
-              <label for="question_form_phone">Phone</label>
-              <input
-                id="question_form_phone"
-                class="question_form--input_phone"
-                placeholder="Your phone number:"
-                type="text"
-              />
-              <label for="question_form_question">Question</label>
-              <input
-                id="question_form_question"
-                class="question_form--input_question"
-                placeholder="I want to know:"
-                type="text"
-              />
-              <input
-                type="checkbox"
-                id="question_form_agreement"
-                class="question_form--input_checkbox"
-              />
-              <label for="question_form_agreement"></label
-              ><span>I agree to the processing of personal data</span>
-              <input class="question_form--submit" type="submit" value="SUBMIT" />
+          <div class="question_form_submit_form_container">
+            <form class="question_form_submit_form" action="index.html">
+              <div class="question_form_submit_form--data">
+                <h2 class="question_form_submit_form--heading">
+                  have any questions?
+                </h2>
+                <div class="question_form_submit_form--name_and_phone_container">
+                  <div class="question_form_submit_form--input_name_container">
+                    <label for="question_form_name">Name</label>
+                    <input
+                      id="question_form_name"
+                      class="question_form_submit_form--input_name"
+                      placeholder="What is your name:"
+                      type="text"
+                      required
+                    />
+                  </div>
+
+                  <div class="question_form_submit_form--input_phone_container">
+                    <label for="question_form_phone">Phone</label>
+                    <input
+                      id="question_form_phone"
+                      class="question_form_submit_form--input_phone"
+                      placeholder="Your phone number:"
+                      type="tel"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="question_form_submit_form--input_question_container">
+                  <label for="question_form_question">Question</label>
+                  <input
+                    id="question_form_question"
+                    class="question_form_submit_form--input_question"
+                    placeholder="I want to know:"
+                    type="text"
+                    required
+                  />
+                </div>
+
+                <div class="question_form_submit_form--input_checkbox_container">
+                  <input
+                    type="checkbox"
+                    id="question_form_agreement"
+                    class="question_form_submit_form--input_checkbox"
+                    checked="checked"
+                    required
+                  />
+                  <label for="question_form_agreement"
+                    >I agree to the processing of personal data</label
+                  >
+                </div>
+                <div class="question_form_submit_form--submit_container">
+                  <input class="question_form_submit_form--submit" type="submit" value="SUBMIT" />
+                </div>
+              </div>
             </form>
           </div>
-        </section> -->
+        </section>
 
         <!--------------------------------------------------------
 
