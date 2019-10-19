@@ -3220,4 +3220,156 @@ $TV-width: 1440px;
 
 // *************************************** QUESTION FORM SECTION END *************************************************
 
+// *************************************** QUESTION FORM SECTION END *************************************************
+
+.find_us {
+  position: relative;
+
+  @media (max-width: 1200px) {
+    background: #131313;
+  }
+
+  @include tablet() {
+    display: flex;
+    flex-direction: column-reverse;
+    background: #131313;
+  }
+
+  @include mobile() {
+    display: flex;
+    flex-direction: column-reverse;
+    background: #131313;
+  }
+
+  &--background {
+    width: 100%;
+    position: absolute;
+    bottom: -75px;
+    z-index: -1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 52px;
+
+    @include tablet() {
+      padding-top: 42px;
+    }
+
+    @include mobile() {
+      padding-top: 42px;
+    }
+
+    &--address {
+      width: 589px;
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #e3b873;
+
+      @include tablet() {
+        width: 308px;
+        height: 71px;
+        font-size: 18px;
+        line-height: 138.6%;
+      }
+
+      @include mobile() {
+        width: 308px;
+        height: 71px;
+        font-size: 18px;
+        line-height: 138.6%;
+      }
+
+      & > a {
+        color: #e3b873;
+        text-decoration: none;
+
+        &:hover {
+          background: blue;
+        }
+      }
+    }
+
+    &--social_network {
+      width: 71px;
+      display: flex;
+      justify-content: space-between;
+      padding: 26px 0 43px 0;
+
+      &_gmail,
+      &_instagram {
+        height: 28px;
+        width: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #e3b873;
+
+        &:hover {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  &_map_api {
+    width: 925px;
+    height: 465px;
+    background: url(./assets/images/map_api--image.png);
+    background-size: cover;
+    margin: 0 auto;
+
+    @include desktop() {
+      width: auto;
+      height: 395px;
+      margin: 0 50px;
+    }
+
+    @include tablet() {
+      height: 300px;
+      width: auto;
+      margin: 46px 25px 0 25px;
+    }
+
+    @include mobile() {
+      height: 255px;
+      width: auto;
+      margin: 46px 17px 0 17px;
+    }
+  }
+}
+
+// *************************************** QUESTION FORM SECTION END *************************************************
+
 // ***************************************** MAIN PAGE END ************************************************************
+
+// ********************************************* FOOTER START *********************************************************
+
+.footer {
+  display: grid;
+  grid-template: 48px 37px 48px / 92px auto 92px;
+  background: #131313;
+
+  @include desktop() {
+    grid-template: 30px 37px 30px / 18px auto 18px;
+  }
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+// ************************************************ FOOTER END **********************************************************

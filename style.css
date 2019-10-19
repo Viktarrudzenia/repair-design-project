@@ -4074,4 +4074,207 @@
   height: 18px;
   cursor: pointer;
 }
+
+.find_us {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .find_us {
+    background: #131313;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .find_us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: #131313;
+  }
+}
+
+@media (max-width: 375px) {
+  .find_us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: #131313;
+  }
+}
+
+.find_us--background {
+  width: 100%;
+  position: absolute;
+  bottom: -75px;
+  z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .find_us--background {
+    display: none;
+  }
+}
+
+.find_us_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 52px;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .find_us_contacts {
+    padding-top: 42px;
+  }
+}
+
+@media (max-width: 375px) {
+  .find_us_contacts {
+    padding-top: 42px;
+  }
+}
+
+.find_us_contacts--address {
+  width: 589px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .find_us_contacts--address {
+    width: 308px;
+    height: 71px;
+    font-size: 18px;
+    line-height: 138.6%;
+  }
+}
+
+@media (max-width: 375px) {
+  .find_us_contacts--address {
+    width: 308px;
+    height: 71px;
+    font-size: 18px;
+    line-height: 138.6%;
+  }
+}
+
+.find_us_contacts--address > a {
+  color: #e3b873;
+  text-decoration: none;
+}
+
+.find_us_contacts--address > a:hover {
+  background: blue;
+}
+
+.find_us_contacts--social_network {
+  width: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 0 43px 0;
+}
+
+.find_us_contacts--social_network_gmail, .find_us_contacts--social_network_instagram {
+  height: 28px;
+  width: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #e3b873;
+}
+
+.find_us_contacts--social_network_gmail:hover, .find_us_contacts--social_network_instagram:hover {
+  background: blue;
+}
+
+.find_us_map_api {
+  width: 925px;
+  height: 465px;
+  background: url(./assets/images/map_api--image.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .find_us_map_api {
+    width: auto;
+    height: 395px;
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .find_us_map_api {
+    height: 300px;
+    width: auto;
+    margin: 46px 25px 0 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .find_us_map_api {
+    height: 255px;
+    width: auto;
+    margin: 46px 17px 0 17px;
+  }
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 48px 37px 48px;
+  -ms-grid-columns: 92px auto 92px;
+      grid-template: 48px 37px 48px / 92px auto 92px;
+  background: #131313;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    -ms-grid-rows: 30px 37px 30px;
+    -ms-grid-columns: 18px auto 18px;
+        grid-template: 30px 37px 30px / 18px auto 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
