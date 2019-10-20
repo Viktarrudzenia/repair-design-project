@@ -9,7 +9,7 @@ In this project, I used many interesting things that I have never done before. E
 1. Just ```git clone``` my repository or download ```.zip``` file
 2. Open ```index.html``` file wherever you want... enjoy it 😃
 
-**My recommends:**
+**My recommendations:**
 
 - For ```.scss``` file use *Visual Studio Code extension*: ```Live Sass Compiler```
 - For instant view in browser *Visual Studio Code extension*: ```Live Server```
